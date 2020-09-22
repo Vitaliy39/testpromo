@@ -47,7 +47,7 @@ class Command(BaseCommand):
                     json_file.truncate()
                     json_file.write(',')
                     codes = []
-                    for i in range(int(amount)):
+                    for _ in range(int(amount)):
                         while True:
                             new_code = ''.join(secrets.choice('0123456789ABCDEFGHJKLMNPQRSTVWXYZ') for i in range(promo_len))
                             if (new_code not in prev_codes) and (new_code not in codes):
