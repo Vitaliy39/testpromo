@@ -1,13 +1,12 @@
-# h1 Решение тестового задания
+# Решение тестового задания
 Основное приложение находится в папке promo
 
-Для запуска необходимо выполнить следующие команды:
+Для записи json файла promotion.json 
+
 ```sh
 $  python manage.py write amount=1, group='avtostop'
 ```
-Здесь происходит запись json файла promotion.json 
-
+Проверка наличия промокода YH0PVRQO в файле promotion.json
 ```sh
 $  python manage.py check YH0PVRQO
 ```
-Происходит проверка наличия промокода YH0PVRQO в файле
