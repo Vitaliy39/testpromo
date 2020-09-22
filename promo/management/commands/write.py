@@ -56,7 +56,6 @@ class Command(BaseCommand):
                     data_dict={'name': name, 'promo': list(codes)}
                     json.dump(data_dict, json_file, ensure_ascii=False, indent=4)
                     json_file.write(']')
-
             else:
                 with open(file_name, 'w', encoding='utf-8') as json_file:
                     array = []
